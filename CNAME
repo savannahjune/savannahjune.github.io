@@ -1,5 +1,1 @@
-$dig www.savannahhenderson.com +nostats +nocomments +nocmd
-# ;www.savannahhenderson.com.                     IN      A
-# www.savannahhenderson.com.              3592    IN      CNAME   savannahjune.github.io.
-# savannahhenderson.github.io.           43192   IN      CNAME   github.map.fastly.net.
-# github.map.fastly.net.                 22      IN      A       96.126.98.28
+www.savannahhenderson.com 
