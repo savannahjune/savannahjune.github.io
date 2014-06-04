@@ -1,69 +1,42 @@
 <!DOCTYPE html>
+
+<!--Map Previews of My Work -->
+
 <html>
-
-<!--Map Previews for SavannahHenderson -->
-
-<link href="./static/css/bootstrap-responsive.css" rel="stylesheet">
-<link href="./static/css/bootstrap.css" rel="stylesheet">
-<link href="./static/css/maps.css" rel="stylesheet">
-
-
 <head>
-	<link rel="stylesheet" href="./static/css/leaflet.css" />
-	<script src="./static/js/leaflet.js">
+	<!--<link href="./static/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./static/css/bootstrap.css" rel="stylesheet"> -->
 
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"> 
+
+	</script>
+
+	<style>
+	#map { height: 960px; 
+	   	   width:500px;
+	   	}
+	</style>
+	</head>
+
+	<body>
+		<div id="map"> </div>   	
+
+	<script>
 	window.onload = function () { 
 	var map = L.map('map').setView([51.505, -0.09], 13);
 
 	L.tileLayer('https://www.mapbox.com/v3/base.mapbox-streets+bg-e8e0d8_landuse_water_buildings_streets/4/3/6.png', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 18
 	}).addTo(map);
 
 	L.marker([43.07265,-89.400929]).addTo(map)
     .bindPopup('Science Hall<br>Where the GISC was born.')
     .openPopup();
-
+};
 
 	</script>
-<style>
+	</body>
+	</html>
 
-h2 {font-size:20px; margin: 0px 0px;}
-h3 {font-size:20px; margin: 0px 0px;}
-h4 {font-size:18px; margin: 0px 0px;}
-h5 {
-    margin: 0px 0px;
-    font-weight:normal;
-    font-size:16px; 
-}
 
-hr {margin:0px;}
-br {margin:1px;}
-p {font-size:16px;}
-li {font-size:16px;}
-
-.span3{ text-align:right;}
-
-hr {
-    border: none;
-    height: 1px;
-    /* Set the hr color */
-    color: #333; //old IE
-    background-color: #333; //Modern Browsers
-}
-
-#map { height: 180px; 
-	   width:900px;}
-
-</style>
-
-</head>
-
-<html>
-
-<br>
- <div id="map"></div>
-
-<br>
-
-</html>
