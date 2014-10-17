@@ -14,6 +14,20 @@
       body {
         padding-top: 40px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
+      span#hidden-pop-up  {
+        position: absolute;
+        left: 50%;
+        margin-left: -150px;
+        margin-right: auto;
+        top: 300px;
+        /*border: 1px solid red;*/
+        z-index: 100000;
+        width: 300px;
+        height: 200px;
+        /*background-color: white;*/
+      }
+
+
     </style>
     <link href="./static/css/bootstrap-responsive.css" rel="stylesheet">
 
@@ -56,15 +70,15 @@
     </div> 
 
      <!-- /background -->
-
+<!--- you can use title = "text" to have hover for whole text -->
 <div class="container">
-      <img class="tablemountain-background" src="./images/savonsafari.jpg" />
-  </div>
+      <img class="tablemountain-background" src="./images/savonsafari.jpg"/>
+      <div id = "pop-up-text">
+        <span id = "hidden-pop-up" title = "This is a black rhino! There are only about 5,000 left in the world.">
+        </span>
+      </div>
 </div>  
 
-<div>
-  <span id = "hidden-pop-up" title = "This is a black rhino! There are only about 5,000 left in the world."> </span>
-</div>
 <!-- /style="position: fixed; left: 0px; top: 40px; width: 1170px; height: 780px; bottom: auto; right: auto; background-size: 100%;" -->
 
 
@@ -84,7 +98,7 @@
     <script src="../static/js/bootstrap-collapse.js"></script>
     <script src="../static/js/bootstrap-carousel.js"></script>
     <script src="../static/js/bootstrap-typeahead.js"></script>
-    <script src="../static/js/personal.js"></script>
+    <!-- <script src="../static/js/personal.js"></script> -->
 
   </body>
 </html>
