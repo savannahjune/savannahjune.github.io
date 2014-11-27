@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gather</title>
+       
+    <!-- Bootstrap -->
+    <link href="gather_files/bootstrap.css" rel="stylesheet">
+    <link href="gather_files/custom.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="gather_files/css.css" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script style="" src="gather_files/jquery.js"></script>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed-->
+    <script src="gather_files/q.js"></script>
+    <script src="gather_files/bootstrap.js"></script>
+
+    <script> var googleMapsAPIKey="AIzaSyD94Hy8ebu6mo6BwokrIHw2MqOGrlnA26M"; </script>
+    <!-- Gather JS Script -->
+    <script src="gather_files/main.js"></script>
+
+    <!-- Javascript for AutoComplete -->
+    <script type="text/javascript" src="gather_files/jquery_002.js"></script>
+    <script src="gather_files/typeahead.js"></script>
+
+    <!-- Required for Google Maps API -->
+    <script src="gather_files/js.js"></script><script src="gather_files/mainplaces.js" type="text/javascript"></script>
+  
+  <script src="gather_files/common.js" charset="UTF-8" type="text/javascript"></script><script src="gather_files/util.js" charset="UTF-8" type="text/javascript"></script><script src="gather_files/stats.js" charset="UTF-8" type="text/javascript"></script><script src="gather_files/AuthenticationService.js" charset="UTF-8" type="text/javascript"></script></head>
+    
+  <body>
+ 
+    <div class="container">
+      <div class="row">
+        <div class="logo col-md-4">
+          <h1>Gather Map</h1>
+        </div> <!-- ends div for col-3 logo -->
+        <div class="loading col-mid-8">
+          <img class"footsteps"="" src="gather_files/walkingeast.gif" hidden="">
+        </div>
+      </div> <!-- ends div for row with logo -->
+    
+      <div class="row">
+
+        <div class="col-md-6 chrome"> <!-- address-form -->
+
+          <div class="row"> <!-- this row is for location_one -->
+             <div class="col-md-12 single-address-group">
+
+              <!-- this is the icon for location one marker red -->
+              <img class="pull-left" style="padding:0; margin-left:50px; margin-top:0px;" src="gather_files/pin-mff8888.png">
+
+              <form role="form"> <!-- location one form -->
+
+                <div class="form-group address_wrapper">
+                  <span style="position: relative; display: inline-block; direction: ltr;" class="twitter-typeahead"><input tabindex="-1" spellcheck="false" autocomplete="off" readonly="readonly" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none repeat scroll 0% 0% rgb(255, 255, 255);" class="typeahead form-control input_boxes tt-hint" type="text"><input dir="auto" style="position: relative; vertical-align: top; background-color: transparent;" spellcheck="false" autocomplete="off" class="typeahead form-control input_boxes tt-input" id="location_one" value="1626 Shattuck Ave, Berkeley, CA, United States" placeholder="Location One" type="text"><pre style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Arimo',sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;" aria-hidden="true"></pre><span style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;" class="tt-dropdown-menu"><div class="tt-dataset-0"></div></span></span>
+                </div>
+
+                <label class="radio-inline">
+                  <input value="DRIVING" name="transport_radio1" id="one" type="radio">
+                  <img class="transport" src="gather_files/car.svg">
+                </label>
+
+                <label class="radio-inline">
+                  <input value="WALKING" name="transport_radio1" id="one" type="radio">
+                  <img class="transport" src="gather_files/walk.svg">
+                </label>
+
+                <label class="radio-inline">
+                  <input value="BICYCLING" name="transport_radio1" id="one" type="radio">
+                  <img class="transport" src="gather_files/bike.svg">
+                </label>
+
+              </form> <!-- ends form location one form -->
+            </div> <!-- ends col mid 2 for location one -->
+          </div> <!-- ends row for location_one -->
+          
+          <div class="row">
+            <div class="col-md-12">
+               <br>
+            </div>
+          </div>
+
+          <div class="row"> <!-- this row is for location_two -->
+             <div class="col-md-12 single-address-group">
+              <img class="pull-left" style="padding:0; margin-left:50px; margin-top:0px;" src="gather_files/pin-m3366FF.png"> 
+
+              <form role="form">
+
+                <div class="form-group address_wrapper">
+                  <span style="position: relative; display: inline-block; direction: ltr;" class="twitter-typeahead"><input tabindex="-1" spellcheck="false" autocomplete="off" readonly="readonly" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none repeat scroll 0% 0% rgb(255, 255, 255);" class="typeahead form-control input_boxes tt-hint" type="text"><input dir="auto" style="position: relative; vertical-align: top; background-color: transparent;" spellcheck="false" autocomplete="off" class="typeahead form-control input_boxes tt-input" id="location_two" value="225 Montecito Avenue, Oakland, CA, United States" placeholder="Location Two" type="text"><pre style="position: absolute; visibility: hidden; white-space: pre; font-family: 'Arimo',sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;" aria-hidden="true"></pre><span style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;" class="tt-dropdown-menu"><div class="tt-dataset-1"></div></span></span>
+                </div>
+
+                  <label class="radio-inline">
+                    <input value="DRIVING" name="transport_radio2" id="two" type="radio">
+                    <img class="transport" src="gather_files/car.svg">
+                  </label>
+
+                  <label class="radio-inline">
+                    <input value="WALKING" name="transport_radio2" id="two" type="radio">
+                    <img class="transport" src="gather_files/walk.svg">
+                  </label>
+
+                  <label class="radio-inline">
+                    <input value="BICYCLING" name="transport_radio2" id="two" type="radio">
+                    <img class="transport" src="gather_files/bike.svg">
+                  </label>
+
+                <!-- </div>   ends div for form-group address_wrapper commented out to keep all options in one left side widget  -->
+              </form> <!-- ends form location form -->
+            </div> <!-- this div ends col 12 for location two -->
+          </div> <!-- ends row for location_two -->
+          
+          <div class="row"> <!-- row for business options and gather button -->
+
+            <div class="col-md-12"> <!-- gather_button -->
+
+              <form role="form" style="text-align:center">
+                <h3>Let's meet at a:</h3> 
+                <label class="radio-inline" style="margin-right:5px; margin-left:5px">
+                  <input value="bar" name="business_option" type="radio">
+                  <img class="business_icon" src="gather_files/bar.svg">
+                </label>
+                <label class="radio-inline" style="margin-right:5px; margin-left:5px">
+                  <input value="restaurant" name="business_option" type="radio">
+                  <img class="business_icon" src="gather_files/restaurant-50.png">
+                </label>
+                <label class="radio-inline" style="margin-right:5px; margin-left:5px">
+                  <input value="cafe" name="business_option" type="radio">
+                  <img class="business_icon" src="gather_files/cafe-50.png">
+                </label>
+                <label class="radio-inline" style="margin-right:5px; margin-left:5px">
+                  <input value="park" name="business_option" type="radio">
+                  <img class="business_icon" src="gather_files/tree.svg">
+                </label>
+                <label class="radio-inline" style="margin-right:5px; margin-left:5px">
+                  <input value="library" name="business_option" type="radio">
+                  <img class="business_icon" src="gather_files/library.svg">
+                </label>
+                <br>
+
+              <button id="location_input" type="submit" class="btn btn-lg btn-block" style="width:50%; margin:auto; margin-top:20px;">Gather!</button>
+              </form> <!-- ends business gather button form -->
+            
+            </div> <!-- ends col div for business options and gather button col-md-12 -->
+        
+          </div> <!-- ends div row for business options and gather button -->
+        
+        </div> <!-- ends left widget col div col-6 --> 
+
+        <div class="col-md-1"></div><!-- space between two left widgets -->
+
+        <div class="col-md-5 chrome business" hidden=""> <!-- this is the col md 5 for business details keeps in line with above widget --> 
+            <div id="business_info">
+               <h2 id="placeName"></h2>
+                <div id="placeAddress"></div>
+                <br>
+                <div id="googlePlusRating"></div>
+                <abbr id="placePhoneNumber" title="Phone"></abbr>
+                <div id="hoursSunday"></div>
+                <div id="hoursMonday"></div>
+                <div id="hoursTuesday"></div>
+                <div id="hoursWednesday"></div>
+                <div id="hoursThursday"></div>
+                <div id="hoursFriday"></div>
+                <div id="hoursSaturday"></div>
+                <div id="placePriceLevel"></div>
+                <div id="placeWebsite"></div>
+                <div class="share_links" hidden=""></div>
+                <br>
+            </div>
+            <div class="next_spot" hidden="">
+              <button id="next_business" type="button" class="btn btn-lg btn-block" style="width:50%; margin:auto; margin-top:20px;">Pick Me Another</button>
+            </div> <!-- ends div for next_spot button -->
+
+        </div> <!-- ends the col md 5 for business details -->
+        
+      </div>  <!-- ends row div for business details which keeps whole left widget together as a row--> 
+      <div class="row">
+        <div class="col-md-12">
+          <br>
+        </div>
+      </div>
+
+      <div class="row maps"> <!-- this is the row for business details --> 
+        <div class="map_one col-md-6 chrome" hidden=""></div>
+        <div class="col-md-1"></div>
+        <div class="map_two col-md-5 chrome" hidden=""></div>
+      </div> <!-- ends row div for business details--> 
+
+      <!-- Map canvas is always hidden, just needed for google maps api -->
+      <div id="map-canvas"></div>
+    
+    </div> <!-- ends container div -->
+
+  
+
+</body></html>
