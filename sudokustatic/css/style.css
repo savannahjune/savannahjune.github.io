@@ -1,0 +1,78 @@
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  font: 100% Helvetica, sans-serif;
+  color: #6BD5E0; }
+
+h1 {
+  margin: 1em auto;
+  width: 60%; }
+
+table {
+  margin: 1em auto;
+  height: 60%;
+  width: 60%; }
+
+td {
+  border: 1px solid;
+  text-align: center; }
+
+td:first-child {
+  border-left: solid; }
+
+td:nth-child(3n) {
+  border-right: solid; }
+
+tr:first-child {
+  border-top: solid; }
+
+tr:nth-child(3n) td {
+  border-bottom: solid; }
+
+.container {
+  height: 100%;
+  width: 100%; }
+
+textarea:focus, input:focus {
+  outline: 0;
+  background-color: #E8ECF0; }
+
+textarea, input {
+  outline: 0;
+  border: 0;
+  font-size: 150%; }
+
+input:read-only {
+  color: black; }
+
+input:-moz-read-only {
+  /* For Firefox */
+  color: black; }
+
+input {
+  color: #F5C53D; }
+
+button {
+  margin: 1em auto;
+  background-color: #F6E8C9;
+  align: center;
+  width: 60%;
+  height: 40px;
+  margin-left: 20%;
+  outline: none;
+  border: #6BD5E0 solid 3px;
+  font-size: 18pt; }
+
+button:active, button:focus, button:hover {
+  outline: none;
+  border: #F5C53D solid 3px; }
+
+input {
+  width: 95%;
+  height: 95%;
+  text-align: center;
+  font-size: 200%; }
+
+/*# sourceMappingURL=style.css.map */

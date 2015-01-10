@@ -1,0 +1,109 @@
+$font-stack: Helvetica, sans-serif;
+$blue: #6BD5E0;
+$grey: #E8ECF0;
+$darkgrey: #B5B5B6;
+$taupe: #F6E8C9;
+$orange: #F5C53D;
+
+
+html {
+	height: 100%;
+	//width: 100%;
+}
+
+body {
+  height: 100%;
+  font: 100% $font-stack;
+  color: $blue;
+} 
+
+// #align_er {
+//   margin: 1em auto;
+//   height: 60%;
+//   width: 60%;
+// }
+
+h1 {
+  margin: 1em auto;
+  width: 60%;
+}
+
+table {
+  margin: 1em auto;
+  height: 60%;
+  width: 60%;
+}
+
+
+td {
+  border:1px solid;
+  text-align:center;
+}
+
+td:first-child {
+  border-left:solid;
+}
+
+td:nth-child(3n) {
+  border-right:solid ;
+}
+
+tr:first-child {
+  border-top:solid;
+}
+
+tr:nth-child(3n) td {
+  border-bottom:solid ;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+    background-color: $grey;
+}
+
+textarea, input{
+    outline: 0;
+    border: 0;
+    font-size: 150%;
+}
+
+input:read-only {
+	color: black;
+}
+
+input:-moz-read-only { /* For Firefox */
+    color: black;
+}
+
+input {
+	color: $orange;
+}
+
+button {
+	margin: 1em auto;
+	background-color: $taupe;
+	align: center;
+	width: 60%;
+	height: 40px;
+	margin-left: 20%;
+	outline: none;
+	border: $blue solid 3px;
+	font-size: 18pt;
+}
+
+button:active, button:focus, button:hover {
+	outline: none;
+	border: $orange solid 3px;
+}
+
+input {
+	width: 95%;
+	height: 95%;
+	text-align: center;
+	font-size: 200%;
+}
